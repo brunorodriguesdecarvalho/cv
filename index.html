@@ -15,6 +15,7 @@
         
         <script src='https://kit.fontawesome.com/a076d05399.js'></script>
         <script src="https://kit.fontawesome.com/53d70dc0b3.js"></script>
+        <script src="src/div.js"></script>
         
         <link rel="stylesheet" href="./src/style.css">
     </head>
@@ -70,9 +71,10 @@
                                     </div>
                                     <div class="col">
                                         <div>
-                                            <strong>Curiosidades:</strong><br>
+                                            <strong>Curiosidades:</strong>
                                         </div>
                                     </div>
+                                    <br>
                                     <div class="col">
                                         <div class="ico"><i class="fas fa-chalkboard-teacher w3-margin-right w3-xlarge w3-text-indigo"></i></div>
                                         <div>
@@ -325,7 +327,7 @@
                                     <td>Bootstrap&nbsp;3&nbsp;&nbsp;</td>
                                     <td class="bar">
                                         <div class="w3-light-grey w3-round-xlarge w3-small">
-                                            <div class="w3-container w3-round-xlarge w3-indigo label" style="width:30%">10%</div>
+                                            <div class="w3-container w3-round-xlarge w3-indigo" style="width:30%">10%</div>
                                         </div>
                                     </td>
                                 </tr>
@@ -339,10 +341,27 @@
 
                 <!-- Right Column -->
                 <div class="w3-twothird">
-                
+            
                     <div class="w3-container w3-card w3-white w3-margin-bottom">
-                        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-indigo"></i>Experiência Profissional</h2>
-                        <div class="w3-container">
+                        
+                        <div class="row">
+                            <div class="col">
+                                <div class="ico">
+                                    <i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-indigo"></i>
+                                </div>
+                                <div>
+                                    <h2 class="w3-text-grey w3-padding-16">Experiência Profissional</h2>
+                                </div>
+                                <div class="ico w3-text-indigo">
+                                    &nbsp;&nbsp;
+                                    <a onclick="mostraExPro()">
+                                        + Mostrar/Ocultar
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                     
+                        <div class="w3-container" id="ExPro1">
                             <h4 class="w3-text-indigo"><b>Assistente Executivo do CEO América do Sul</b></h4>
                             <h5 class="w3-opacity"><b>Allianz Global Corporate & Specialties</b></h5>
                             <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Nov/2018 - Ago/2019</h6>
@@ -351,16 +370,16 @@
                             <hr>
                         </div>
 
-                        <div class="w3-container">
+                        <div class="w3-container" id="ExPro2">
                             <h4 class="w3-text-indigo"><b>Analista de Inteligência de Negócio - Corretores Globais e Clientes de Relacionamento</b></h4>
                             <h5 class="w3-opacity"><b>Zurich Seguros</b></h5>
                             <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul/2017 - Out/2018</h6>
-                            <p><strong>Principais Atividades: </strong>Responsável no Brasil pela governança do CRM (MS Dynamics). Participar de projetos para integrar o CRM com outros sistemas legados. Extrair dados do CRM para monitorar o desempenho financeiro por canal de distribuição e produzir relatórios para discussão em reuniões de vendas. Realizar a manutenção e a submissão de relatórios não automatizados sobre o desempenho financeiro dos canais de distribuição.</p>
-                            <p><strong>Resultados:</strong> Aumento significativo na qualidade das informações registradas no CRM em função dos treinamentos realizados. Combinar bases de dados de vendas e inspeções de riscos realizadas nos anos anteriores utilizando a inteligência de dados para a priorização automática de prospecções e clientes alvos, bem como antecipação das discussões de preço e estratégia de abordagem. Uma parte do processo de atualização dos relatórios sobre o desempenho financeiro dos canais foi automatizado via Excel/VBA.</p>
+                            <p id="3"><strong>Principais Atividades: </strong>Responsável no Brasil pela governança do CRM (MS Dynamics). Participar de projetos para integrar o CRM com outros sistemas legados. Extrair dados do CRM para monitorar o desempenho financeiro por canal de distribuição e produzir relatórios para discussão em reuniões de vendas. Realizar a manutenção e a submissão de relatórios não automatizados sobre o desempenho financeiro dos canais de distribuição.</p>
+                            <p id="4"><strong>Resultados:</strong> Aumento significativo na qualidade das informações registradas no CRM em função dos treinamentos realizados. Combinar bases de dados de vendas e inspeções de riscos realizadas nos anos anteriores utilizando a inteligência de dados para a priorização automática de prospecções e clientes alvos, bem como antecipação das discussões de preço e estratégia de abordagem. Uma parte do processo de atualização dos relatórios sobre o desempenho financeiro dos canais foi automatizado via Excel/VBA.</p>
                             <hr>
                         </div>
 
-                        <div class="w3-container">
+                        <div class="w3-container" id="ExPro3">
                             <h4 class="w3-text-indigo"><b>Analista de Inteligência de Negócio - Corretores Globais e Clientes de Relacionamento</b></h4>
                             <h5 class="w3-opacity"><b>Zurich Seguros</b></h5>
                             <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul/2017 - Out/2018</h6>
@@ -369,7 +388,7 @@
                             <hr>
                         </div>
                         
-                        <div class="w3-container">
+                        <div class="w3-container" id="ExPro4">
                             <h4 class="w3-text-indigo"><b>Analista de proposta de valor - Seguros para pequenas e médias empresas (PME)</b></h4>
                             <h5 class="w3-opacity"><b>Zurich Seguros</b></h5>
                             <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul/2017 - Out/2018</h6>
@@ -378,7 +397,7 @@
                             <hr>
                         </div> 
 
-                        <div class="w3-container">
+                        <div class="w3-container" id="ExPro5">
                             <h4 class="w3-text-indigo"><b>Líder de vendas - Seguros para médias empresas no Brasil</b></h4>
                             <h5 class="w3-opacity"><b>Zurich Seguros</b></h5>
                             <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul/2017 - Out/2018</h6>
@@ -387,7 +406,7 @@
                             <hr>
                         </div> 
 
-                        <div class="w3-container">
+                        <div class="w3-container" id="ExPro6">
                             <h4 class="w3-text-indigo"><b>Assistente de estratégia - Seguros para médias empresas no Brasil</b></h4>
                             <h5 class="w3-opacity"><b>Zurich Seguros</b></h5>
                             <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul/2017 - Out/2018</h6>
@@ -396,7 +415,7 @@
                             <hr>
                         </div>
                         
-                        <div class="w3-container">
+                        <div class="w3-container" id="ExPro7">
                             <h4 class="w3-text-indigo"><b>Analista de inteligência de negócio – CEO Office Brasil</b></h4>
                             <h5 class="w3-opacity"><b>Zurich Seguros</b></h5>
                             <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul/2017 - Out/2018</h6>
@@ -405,7 +424,7 @@
                             <hr>
                         </div> 
 
-                        <div class="w3-container">
+                        <div class="w3-container" id="ExPro8">
                             <h4 class="w3-text-indigo"><b>Assistente de estratégia ao CEO Brasil</b></h4>
                             <h5 class="w3-opacity"><b>Zurich Seguros</b></h5>
                             <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul/2017 - Out/2018</h6>
@@ -414,7 +433,7 @@
                             <hr>
                         </div>
 
-                        <div class="w3-container">
+                        <div class="w3-container" id="ExPro9">
                             <h4 class="w3-text-indigo"><b>Assistente de estratégia do Chief of Staff da América Latina</b></h4>
                             <h5 class="w3-opacity"><b>Zurich Seguros</b></h5>
                             <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul/2017 - Out/2018</h6>
@@ -423,7 +442,7 @@
                             <hr>
                         </div>
 
-                        <div class="w3-container">
+                        <div class="w3-container" id="ExPro10">
                             <h4 class="w3-text-indigo"><b>Analista de planejamento estratégico - CEO Office Brasil</b></h4>
                             <h5 class="w3-opacity"><b>Zurich Seguros</b></h5>
                             <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul/2017 - Out/2018</h6>
@@ -431,48 +450,128 @@
                             <p><strong>Resultados:</strong> ?</p>
                             <hr>
                         </div>
-
                     </div>
 
-                    <div class="w3-container w3-card w3-white">
-                        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-indigo"></i>Escolaridade</h2>
+                    <!--Final das Experiências Profissionais / Começo da Escolaridade -->
+
+                    <div class="w3-container w3-card w3-white w3-margin-bottom">
                         
-                        <div class="w3-container">
+                        <div class="row">
+                            <div class="col">
+                                <div class="ico">
+                                    <i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-indigo"></i>
+                                </div>
+                                <div>
+                                    <h2 class="w3-text-grey w3-padding-16">Escolaridade</h2>
+                                </div>
+                                <div class="ico w3-text-indigo">
+                                    &nbsp;&nbsp;
+                                    <a onclick="mostraEsc()">
+                                        + Mostrar/Ocultar
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="w3-container" id="Esc1">
                             <h5 class="w3-opacity"><b>Faculdade de Tecnologia de São Paulo - FATEC</b></h5>
                             <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul 2019 - <span class="w3-tag w3-indigo w3-round">Em Andamento</span></h6>
                             <p>Análise e Desenvolvimento de Sistemas</p>
                             <hr>
                         </div>
 
-                        <div class="w3-container">
+                        <div class="w3-container" id="Esc2">
                                 <h5 class="w3-opacity"><b>Faculdade de Tecnologia de São Paulo - FATEC</b></h5>
                                 <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul/2018 - Jun/2019 (trancado) </h6>
                                 <p>Gestão Comercial</p>
                                 <hr>
                             </div>
                         
-                        <div class="w3-container">
+                        <div class="w3-container" id="Esc3">
                             <h5 class="w3-opacity"><b>Faculdades Metropolitanas Unidas - FMU</b></h5>
                             <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan/2012 - Jun/2013 (trancado) </h6>
                             <p>Ciências Econômicas</p>
                             <hr>
                         </div>
                         
-                        <div class="w3-container">
+                        <div class="w3-container" id="Esc4">
                             <h5 class="w3-opacity"><b>Fundação Escola do Comércio Alvares Penteado - FECAP</b></h5>
                             <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan/2009 - Dez/2011 (transferência)</h6>
                             <p>Ciências Econômicas</p>
                         <hr>
                         </div>
 
-                        <div class="w3-container">
+                        <div class="w3-container" id="Esc5">
                             <h5 class="w3-opacity"><b>Escola Técnica Estadual Guaracy Silveira</b></h5>
                             <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan/2006 - Dez/2008 (completo) </h6>
                             <p>Ensino Médio + Técnico em Administração</p>
                         <hr>
                         </div>
                         
-                        <div class="w3-container">
+                        <div class="w3-container" id="Esc6">
+                                <h5 class="w3-opacity"><b>Microcamp</b></h5>
+                                <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar/2003 - Ago/2004 (completo) </h6>
+                                <p>Web Design</p>
+                        </div>
+
+                    </div>
+
+                    <!--Final da Escolaridade / Começo de Cursos -->
+                    <div class="w3-container w3-card w3-white w3-margin-bottom">
+                        
+                        <div class="row">
+                            <div class="col">
+                                <div class="ico">
+                                    <i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-indigo"></i>
+                                </div>
+                                <div>
+                                    <h2 class="w3-text-grey w3-padding-16">Cursos Extra-Curriculares</h2>
+                                </div>
+                                <div class="ico w3-text-indigo">
+                                    &nbsp;&nbsp;
+                                    <a onclick="mostraCurso()">
+                                        + Mostrar/Ocultar
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="w3-container" id="Curso1">
+                            <h5 class="w3-opacity"><b>Faculdade de Tecnologia de São Paulo - FATEC</b></h5>
+                            <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul 2019 - <span class="w3-tag w3-indigo w3-round">Em Andamento</span></h6>
+                            <p>Análise e Desenvolvimento de Sistemas</p>
+                            <hr>
+                        </div>
+
+                        <div class="w3-container" id="Curso2">
+                            <h5 class="w3-opacity"><b>Faculdade de Tecnologia de São Paulo - FATEC</b></h5>
+                            <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul/2018 - Jun/2019 (trancado) </h6>
+                            <p>Gestão Comercial</p>
+                            <hr>
+                        </div>
+                        
+                        <div class="w3-container" id="Curso3">
+                            <h5 class="w3-opacity"><b>Faculdades Metropolitanas Unidas - FMU</b></h5>
+                            <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan/2012 - Jun/2013 (trancado) </h6>
+                            <p>Ciências Econômicas</p>
+                            <hr>
+                        </div>
+                        
+                        <div class="w3-container" id="Curso4">
+                            <h5 class="w3-opacity"><b>Fundação Escola do Comércio Alvares Penteado - FECAP</b></h5>
+                            <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan/2009 - Dez/2011 (transferência)</h6>
+                            <p>Ciências Econômicas</p>
+                            <hr>
+                        </div>
+
+                        <div class="w3-container" id="Curso5">
+                            <h5 class="w3-opacity"><b>Escola Técnica Estadual Guaracy Silveira</b></h5>
+                            <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan/2006 - Dez/2008 (completo) </h6>
+                            <p>Ensino Médio + Técnico em Administração</p>
+                            <hr>
+                        </div>
+                        
+                        <div class="w3-container" id="Curso6">
                                 <h5 class="w3-opacity"><b>Microcamp</b></h5>
                                 <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar/2003 - Ago/2004 (completo) </h6>
                                 <p>Web Design</p>
