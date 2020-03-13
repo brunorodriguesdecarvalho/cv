@@ -10,15 +10,13 @@ a:hover{
     padding: 4px;}
 .brunopic{width:100%;}
 .brunonome{
-    background-color: #3f51b5; 
     width: auto; 
     margin: 8px; 
     text-align: center;
     font-family: "Roboto";
     font-size: 28px;
     font-weight: bold;
-    color:white; 
-    text-shadow: 0.1vw 0.1vw black;
+    text-shadow: 0.1vw 0.2vw black;
 }
 .ico{margin:auto;}
 ul{padding-inline-start: 0px; padding-inline-end: 0px;list-style: none;}
