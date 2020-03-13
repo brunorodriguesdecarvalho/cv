@@ -1,4 +1,7 @@
 *, body, p {font-family: "Roboto", sans-serif;}
+#ExPro1, #ExPro2, #ExPro3, #ExPro4, #ExPro5, #ExPro6, #ExPro7, #ExPro8, #ExPro9, #ExPro10,
+#Esc1, #Esc2, #Esc3, #Esc4, #Esc5, #Esc6,
+#Curso1, #Curso2, #Curso3, #Curso4, #Curso5, #Curso6 {display: none;}
 .row{display: inline;}
 .col{display: inline-flex; padding: 5px 0px;}
 a:link{text-decoration:none}
