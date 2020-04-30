@@ -118,3 +118,15 @@ function mostraContato() {
         Contato.style.display = "block";
     }     
 }
+
+function mostraIdioma() {
+    const idioma = document.getElementById("Idioma");
+    if (idioma.style.display != "none") {idioma.style.display = "none";}  
+    else {idioma.style.display = "block";}     
+}
+
+function mostraativ() {
+    const ativ = document.getElementById("ativ");
+    if (ativ.style.display != "none") {ativ.style.display = "none";}  
+    else {ativ.style.display = "block";}     
+}
