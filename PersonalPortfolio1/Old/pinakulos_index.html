@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pinákulos</title>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Titillium+Web:200,400,600,700,900&display=swap" rel="stylesheet">
+        <style>
+            body,h1,h2,h3,h4,h5,h6 {font-family: 'Titilium Web','Ubuntu', Arial, sans-serif; scrollbar-width: none;};
+            .mySlides {display: none;};
+            .center-h {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            .center-v {vertical-align: center; top: 50%; }
+            .card {
+                padding: 20px;
+                background-color:rgba(255, 255, 255, 0.3);
+                color: black;
+                font-size: 24px;
+                max-width: 1200px;
+                top: 20%;
+                max-height: 400px;
+                position: absolute;
+            }
+            .seta {
+                background-color: rgba(0, 0, 0, 0.9);
+                padding-right:12px;
+                padding-left: 12px;
+                padding-top: 12px;
+                padding-bottom: 12px;
+                color: white; 
+                border: none;
+                margin: none;        
+            }
+            .bkgprop {
+                width: 100%;
+                height: 1080px;
+                background-repeat: no-repeat;
+                background-size: contain;
+                overflow: hidden;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- INÍCIO DA BARRA LATERA (OCULTA POR DEFAULT)) -->
+        <header>
+            <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-large w3-animate-left" style="display:none; 
+            width:40%;min-width:200px" id="mySidebar">
+                <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button">X</a>
+                <a href="#food" onclick="w3_close()" class="w3-bar-item w3-button">Produtos</a>
+                <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">Sobre a Empresa</a>
+            </nav>
+        <!-- FIM DA BARRA LATERAL-->
+        <!-- INÍCIO DO MENU DE CIMA -->
+            <div style="display: flex; justify-content: center;">
+                <div style="max-width: 1200px; width: 100%;color:white; top: 0; position: fixed;   
+                overflow:hidden; text-align: center; font-size: 28px; background-color: rgba(0, 0, 0, 0.9);
+                padding-bottom: 25px; padding-top: 25px;">
+                    <div onclick="w3_open()" style="display: inline-block; position: absolute; left: 0; padding-left:25px">
+                        <strong>☰</strong>
+                    </div>
+                    <div style="display: inline-block;">
+                        <strong>PINÁKULOS</strong>
+                    </div>
+                    <div style="display: inline-block; right: 0; position: absolute; padding-right: 25px">
+                        &nbsp;Contato&nbsp; 
+                        <img src="img/WhatsApp_Logo_3.png" style="width:30px;">
+                    </div>
+                </div>
+            </div>
+        <!-- FIM DO MENU DE CIMA -->
+        </header>
+        <section>
+        <!-- INÍCIO DO SLIDE SHOW -->
+            <article>
+                <!-- Início Grupo dos botões -->
+                <div style="position: fixed; top: 50%; display: flex; width: 100%;">
+                    <!-- Início Botão Esquerda slide show -->
+                    <div style="position: relative; left: 0%;">
+                        <button onclick="plusDivs(-1)" class="seta"><b>&#10094;</b></button>
+                    </div>
+                    <!-- Final Botão Esquerda Slide Show -->
+                
+                    <!-- Início Botão Direita Slide Show -->
+                    <div style="position: fixed; right: 0%;">
+                        <button onclick="plusDivs(+1)" class="seta"><b>&#10095;</b></button>
+                    </div>
+                    <!-- Final Botão Direita Slide Show -->
+                </div>
+                <!-- Final Grupo dos botões -->
+                <!-- Fundo Rotativo (BETA) -->
+                <div style="align-content: center">
+                    <div class="mySlides bkgprop" style="background-image: url('img/pequeno_0.jpg'); ">
+                    </div>
+                    <div class="mySlides bkgprop" style="background-image: url('img/pequeno_1b.jpg');">
+                    </div>
+                    <div class="mySlides bkgprop" style="background-image: url('img/pequeno_3.jpg');">
+                    </div>
+                    <div class="mySlides bkgprop" style="background-image: url('img/pequeno_5b.jpg');"> 
+                    </div>
+                </div>
+                <!-- Fundo Rotativo (BETA) -->
+                
+                <!-- CARD 1 : Pequeno Príncipe -->
+                <div style="width: 450px; height: 300px; margin: auto; background-color: rgba(255, 255, 255, 0.35); position: fixed">
+                    <div>
+                        <img src="img/relogio_pequeno_1.jpg" style="width: 300px;">
+                        <br>
+                        <button class="w3-button w3-green" style="width: 300px;">
+                            COMPRE AGORA
+                        </button>
+                    </div>
+                    <div>
+                        <h1> 
+                            Linha de Produtos do <strong>Pequeno Príncipe</strong>
+                        </h1>
+                    </div>
+                </div>
+
+            </article>
+        <!-- FINAL DO SLIDE SHOW -->
+        </section>
+        <script>
+            // Script para abrir e fechar a barra
+            function w3_open() {document.getElementById("mySidebar").style.display = "block";}
+            function w3_close() {document.getElementById("mySidebar").style.display = "none";}
+            // Script para slide background
+            var slideIndex = 1;
+            showDivs(slideIndex);
+            function plusDivs(n) {
+                showDivs(slideIndex += n);
+            }
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                if (n > x.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = x.length}
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                }
+                x[slideIndex-1].style.display = "block";  
+            }
+        </script>
+    </body>
+</html>
+st

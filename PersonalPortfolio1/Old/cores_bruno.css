@@ -1,0 +1,25 @@
+.b-vermelho:hover{color:#fff;background-color: rgba(255, 55, 55, 0.3);}
+.b-vermelho{color:#fff;background-color: rgba(255, 55, 55, 1);}
+.b-vermelho-escuro{color:#fff;background-color:rgb(185, 6, 6)}
+.b-laranja{color:#fff;background-color:#fc4a19}
+.b-azul-escuro{color:#fff;background-color: rgba(0, 46, 114, 1);}
+.b-azul-claro {color:#000;background-color:#9ebcff}
+.b-azul:hover{color:#fff;background-color:rgba(0,119,255,0.3)}
+.b-azul{color:#fff;background-color:rgba(0,119,255,1)}
+.b-verde:hover{color:#fff;background-color:rgba(0,163,0,0.3);}
+.b-verde{color:#fff;background-color: rgba(0,163,0,1);}
+.b-verde-claro{color:#fff;background-color:#74fa4b}
+.b-verde-escuro{color:#fff;background-color:#004b23}
+.b-preto{color:#fff; background-color: #1d1d1d}
+.b-magenta{color:#fff;background-color:#ff0097}
+.b-roxo-claro{color:#fff;background-color:rgba(159, 0, 167, 1)}
+.b-roxo-claro:hover{color:#fff;background-color: rgba(159, 0, 167, 0.3)}
+.b-roxo{color:#fff;background-color:#53164e}
+.b-turquesa{color:#fff;background-color:#00aba9}
+.b-amarelo-claro:hover{color:#fff;background-color:rgba(255,196,13,0.3)}
+.b-amarelo-claro{color:#fff;background-color:rgba(255,196,13,1)}
+.b-amarelo-sol{color:#fff;background-color:#e3a21a}
+.b-branco{color:#000;background-color: #fff;}
+.b-cinza{color:#000; background-color: rgb(187, 8, 8);}
+.b-cinza-escuro{color:rgb(27, 136, 99);background-color: #f1f1f1;}
+.b-cinza:hover{color:#fff; background-color: rgb(0, 0, 0);}

@@ -1,0 +1,68 @@
+input{border: 1px dotted grey; border-radius: 2px;}
+h2{font-weight: 900;color: white;padding: 16px;}
+.input_desc{height: 90px;width: 99%;word-wrap: break;}
+.input_nome{overflow-x: auto;overflow-y: auto;width: 85%;}
+.b-card{vertical-align: middle;width: 100%;text-align: center;margin: auto;}
+.b-label{overflow: hidden;text-align: Center; }
+.b-row{padding: 1px; margin: auto;text-align: Center;justify-content:center;}
+.b-table{
+    min-width:300px;
+    width: 98%;
+    margin: auto;
+    display: flexbox;
+    flex-wrap: wrap;
+    border: 0px solid grey;
+    justify-content:center;
+    padding: 3px;
+    box-shadow:0px 4px 10px 0px rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+    background-color: white;
+ 
+}
+.b-td{border: 1px dotted grey;padding: 1px 1px;}
+.b-th{color: black;font-weight: 700;}
+.b-table-php{border-collapse: collapse;width: 99%;margin:auto;}
+.btn-vermelho{background-color: rgba(192,0,0,1);
+    border: none;
+    color: white;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 2px;
+    transition-duration: 0.6s;
+}
+.btn-vermelho:hover{background-color: rgba(192,0,0,0.5);border-color: rgba(192,0,0,1);}
+.btn-azul{background-color: rgba(0, 46, 114,1);
+    border: none;
+    color: white;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 2px;
+    transition-duration: 0.6s;
+}
+.btn-azul:hover{background-color: rgba(0, 46, 114,0.5);border-color: rgba(0, 46, 114,1);}
+.btn-verde{background-color: rgba(0,163,0,1);
+    border: none;
+    color: white;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 2px;
+    transition-duration: 0.6s;
+}
+.btn-verde:hover{background-color: rgba(0,163,0,0.5);border-color: rgba(0,163,0,1);}
+.font-small{text-size:8px;}
+*{padding: 0px;font-family: "Exo 2", Arial, serif;overflow-x: auto;overflow-y: auto;}
+.oculto{display:none;}

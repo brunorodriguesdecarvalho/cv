@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="BSC Hub">
+
+        <title>BSC:HUB</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Exo+2:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+        <!-- <script language="javascript" src="js.js"></script> -->
+        <link rel="stylesheet" type="text/css" href="cores_bruno.css">
+        <style>
+            .flipcard{
+                transition-duration: 0.2s;
+                display:inline-block;
+                padding:15px;
+                margin:5px; 
+                max-width:120px; 
+                text-align: center; 
+                vertical-align: middle; 
+                text-shadow:2px 2px 2px black;
+                border-radius: 4px;
+            }
+            .jumbocard{display:inline-block;width:100%;padding:15px; }
+            .titulo_cabecalho{font-weight: 800;}
+            .desligado{opacity: 0.6; cursor: not-allowed;}
+
+            a:link{text-decoration: none;list-style-type: none;font-weight: bolder}
+            a:visited{text-decoration: none;list-style-type: none;}
+            a:hover{text-decoration: none;list-style-type: none; font-weight: bolder;}
+
+            .tooltip .tooltiptext {visibility: hidden}
+            .tooltip:hover .toolttiptext {visibility: visible}
+
+            html, body, *{  
+                font-family: "Exo 2", Arial, serif;
+                border: 0px solid transparent;
+                padding: 0em 0em;
+                margin: none;
+            }
+            a:visited, a:link{color:white;}
+            
+            body{
+                overflow-x:hidden;
+            }
+        </style>
+    </head>
+    <body class="b-preto">
+        <div style="position: absolute; top:0; left:0; width:100%; ">
+            <div class="jumbocard">
+                <h1 class="titulo_cabecalho">Bruno&nbsp;ScoreCard&nbsp;HUB</h1>
+            </div>
+            <!-- Começo do Menu -->
+
+            <!-- Sobre o BSC:HUB -->
+            <div class="jumbocard b-vermelho-escuro" >
+                <div class="flipcard b-vermelho-escuro"><strong>SOBRE:</strong></div>
+                <a class="flipcard b-vermelho" href="CVB.html" target="_blank">Quem é o Bruno?</a>
+                <a class="flipcard b-vermelho" href="Comentario.php">Fale com o Bruno</a>
+                <a class="flipcard b-vermelho" href="whats_scorecard.html" target="_blank">Sobre este Site</a>
+                <a class="flipcard b-vermelho" href="cadastro_lista_atividades.php" target="_blank">Scorecard de Atividades</a>
+                <a class="flipcard b-vermelho" href="obj_ini.html">Scorecard de Objetivos</a>
+            </div>
+
+            <!-- Programaçãos -->
+            <div class="jumbocard b-verde-escuro">
+                <div class="flipcard b-verde-escuro"><strong>HUB DE PROGRAMAÇÃO:</strong></div>
+                <a class="flipcard b-verde" href="Python.html">Python</a>
+                <a class="flipcard b-verde" href="iac-aula5.html" target="_blank">Arquitetura e Organização de Computadores</a>
+                <a class="flipcard b-verde" href="W3CSS.html" target="_blank">Framework W3.CSS</a>
+                <a class="flipcard b-verde desligado" href="" target="_blank">Programação em Microinformática</a>
+                <a class="flipcard b-verde desligado" href="" target="_blank">Matemática Discreta</a>
+            </div>
+
+            <!-- Inteligência de Negócio -->
+            <div class="jumbocard b-azul-escuro">
+                <div class="flipcard b-azul-escuro"><strong>HUB DE INTELIGÊNCIA DE NEGÓCIO:</strong></div>
+                <a class="flipcard b-azul" href="https://brunofeed.wordpress.com" target="_blank">BrunoFeed (Clipping)</a>
+                <a class="flipcard b-azul desligado" href="" target="_blank">Capability Assessment</a>
+                <a class="flipcard b-azul desligado" href="" target="_blank">Dashboard SUSEP</a>
+            </div>
+            
+            <!-- Projetos -->
+            <div class="jumbocard b-amarelo-sol">
+                <div class="flipcard b-amarelo-sol" target="_blank"><strong>HUB DE PROJETOS:</strong></div>
+                <a class="flipcard b-amarelo-claro" href="pinakulos_index.html" target="_blank">Pinákulos</a>
+                <a class="flipcard b-amarelo-claro desligado" href="" target="_blank">BeatyPass</a>
+                <a class="flipcard b-amarelo-claro desligado" href="" target="_blank">Balanced Scorecard</a>
+            </div>
+
+            <!-- Bem Estar e Equilíbrio -->
+            <div class="jumbocard b-roxo">
+                <div class="flipcard b-roxo"><strong>HUB DE BEM-ESTAR & EQUILÍBRIO:</strong></div>
+                <a class="flipcard b-roxo-claro desligado" href="" target="_blank">Corridas</a>
+                <a class="flipcard b-roxo-claro desligado" href="" target="_blank">Professor Voluntário</a>
+                <a class="flipcard b-roxo-claro desligado" href="" target="_blank">Previdência</a>
+            </div>
+
+            <!-- Links Externos -->
+            <div class="jumbocard">
+                <div class="flipcard"><strong>Links Externos:</strong></div>
+                <a class="flipcard" href="http://drive.google.com" target="_blank">Google Drive da Fatec</a>
+                <a class="flipcard" href="http://www.clictec.com.br/ial002/" target="_blank">Lógica de Programação (Professor Banin)</a>
+            </div>
+
+            <!-- Final do Menu -->
+        <div class="jumbocard">Site criado por Bruno Rodrigues de Carvalho</div>
+    </div>
+    </body>
+</html>
